@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
+  <title id="title">暖色人文科技工作室</title>
+  <desc id="description">一幅浅色、安静、带油画笔触的创作者工作室插画</desc>
+
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F2E8" />
+      <stop offset="0.58" stop-color="#F2E9DA" />
+      <stop offset="1" stop-color="#E9DCC9" />
+    </linearGradient>
+    <linearGradient id="windowLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DCE6DF" />
+      <stop offset="1" stop-color="#F2D7B6" />
+    </linearGradient>
+    <linearGradient id="desk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9A6248" />
+      <stop offset="0.5" stop-color="#B77B58" />
+      <stop offset="1" stop-color="#845340" />
+    </linearGradient>
+    <filter id="paper" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="3" seed="11" result="noise" />
+      <feColorMatrix in="noise" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 .055 0" result="grain" />
+      <feBlend in="SourceGraphic" in2="grain" mode="multiply" />
+    </filter>
+    <filter id="brush" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="7" result="texture" />
+      <feDisplacementMap in="SourceGraphic" in2="texture" scale="5" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="0.7" />
+    </filter>
+  </defs>
+
+  <g filter="url(#paper)">
+    <rect width="1200" height="360" rx="22" fill="url(#wall)" />
+
+    <path d="M0 279 C165 234 318 233 474 268 C640 305 789 318 952 291 C1056 274 1133 246 1200 222 L1200 360 L0 360 Z" fill="#C8B48F" opacity="0.48" filter="url(#brush)" />
+    <path d="M0 310 C180 274 322 277 493 311 C642 341 788 338 939 310 C1052 289 1135 279 1200 284 L1200 360 L0 360 Z" fill="#7F8C73" opacity="0.68" filter="url(#brush)" />
+    <path d="M0 334 C191 309 355 319 522 345 L0 360 Z" fill="#C56F4F" opacity="0.72" filter="url(#brush)" />
+
+    <circle cx="154" cy="100" r="51" fill="#D88455" opacity="0.92" filter="url(#soft)" />
+    <path d="M75 172 C199 122 340 126 470 162" fill="none" stroke="#D3A34B" stroke-width="20" stroke-linecap="round" opacity="0.54" filter="url(#brush)" />
+    <path d="M102 207 C243 168 368 178 507 213" fill="none" stroke="#B76A50" stroke-width="9" stroke-linecap="round" opacity="0.48" filter="url(#brush)" />
+
+    <g opacity="0.96">
+      <path d="M827 268 V116 C827 54 876 25 935 25 C994 25 1043 54 1043 116 V268 Z" fill="#EEE1CE" stroke="#5C554A" stroke-width="4" />
+      <path d="M847 258 V118 C847 71 884 47 935 47 C986 47 1023 71 1023 118 V258 Z" fill="url(#windowLight)" />
+      <path d="M847 187 C893 159 939 165 977 181 C994 188 1008 190 1023 187 V258 H847 Z" fill="#8C9A7D" opacity="0.66" filter="url(#brush)" />
+      <path d="M847 211 C900 187 956 201 1023 226 V258 H847 Z" fill="#C7845B" opacity="0.56" filter="url(#brush)" />
+      <path d="M935 48 V258" stroke="#766F62" stroke-width="3" opacity="0.62" />
+      <path d="M847 141 H1023" stroke="#766F62" stroke-width="3" opacity="0.46" />
+    </g>
+
+    <g>
+      <rect x="616" y="254" width="520" height="20" rx="8" fill="url(#desk)" filter="url(#brush)" />
+      <path d="M653 271 L640 344 M1094 271 L1110 344" stroke="#62483A" stroke-width="10" stroke-linecap="round" />
+
+      <ellipse cx="735" cy="171" rx="23" ry="26" fill="#C98F6C" />
+      <path d="M713 168 C714 140 753 137 760 162 C748 151 727 153 713 168 Z" fill="#4A4037" />
+      <path d="M713 202 C742 184 782 200 793 245 L703 248 C701 226 701 211 713 202 Z" fill="#B85F43" filter="url(#brush)" />
+      <path d="M765 209 C791 217 809 227 831 240" fill="none" stroke="#C98F6C" stroke-width="12" stroke-linecap="round" />
+      <path d="M709 246 C694 276 692 302 697 330 M760 247 C772 276 786 299 806 324" fill="none" stroke="#4C4B42" stroke-width="14" stroke-linecap="round" />
+      <path d="M683 220 C661 248 660 289 672 319" fill="none" stroke="#6F7568" stroke-width="12" stroke-linecap="round" />
+
+      <path d="M824 247 L841 190 H930 L946 247 Z" fill="#E7DDCD" stroke="#665D52" stroke-width="4" />
+      <rect x="849" y="200" width="72" height="41" rx="3" fill="#7C8B83" opacity="0.88" />
+      <circle cx="885" cy="220" r="5" fill="#E9C67C" />
+
+      <rect x="969" y="229" width="73" height="9" rx="4" fill="#A34F3F" />
+      <rect x="976" y="217" width="66" height="9" rx="4" fill="#D6A24D" />
+      <rect x="982" y="205" width="60" height="9" rx="4" fill="#71816D" />
+
+      <path d="M1084 232 C1068 202 1071 174 1087 154 M1085 191 C1065 184 1055 170 1053 153 M1086 179 C1104 167 1112 150 1110 132" fill="none" stroke="#6D8064" stroke-width="7" stroke-linecap="round" />
+      <ellipse cx="1054" cy="150" rx="15" ry="8" fill="#7D916F" transform="rotate(34 1054 150)" />
+      <ellipse cx="1110" cy="131" rx="16" ry="9" fill="#738768" transform="rotate(-38 1110 131)" />
+      <ellipse cx="1088" cy="154" rx="17" ry="9" fill="#91A27F" transform="rotate(-9 1088 154)" />
+      <path d="M1064 230 H1103 L1096 256 H1071 Z" fill="#BF7655" />
+    </g>
+
+    <path d="M519 86 C607 52 700 56 775 83" fill="none" stroke="#8C9B8A" stroke-width="7" stroke-linecap="round" opacity="0.42" filter="url(#brush)" />
+    <path d="M523 106 C599 82 674 85 742 109" fill="none" stroke="#C98768" stroke-width="4" stroke-linecap="round" opacity="0.48" />
+  </g>
+
+  <rect x="1.5" y="1.5" width="1197" height="357" rx="21" fill="none" stroke="#D8CCBA" stroke-width="3" />
+</svg>
