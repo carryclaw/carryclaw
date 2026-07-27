@@ -30,14 +30,6 @@
 - **AI Engineering** — 探索 LLM 应用、AI Agent 与多智能体系统
 - **Indie Building** — 用持续交付构建自己的第二增长曲线
 
-## 代表作品
-
-### [codex-permission-popup](https://github.com/carryclaw/codex-permission-popup)
-
-一个为 Codex 设计的 macOS 原生授权弹窗。它让授权请求更显眼、更可控，并始终保持保守的安全边界。
-
-`JavaScript` · `macOS` · `Codex Hooks`
-
 ## 技术与工具
 
 `Java` · `Spring Boot` · `MySQL` · `Redis` · `Python` · `TypeScript` · `Node.js` · `Vue` · `Docker` · `Git`
